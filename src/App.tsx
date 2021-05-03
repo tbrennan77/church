@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App min-h-screen min-w-full bg-gray-100 flex flex-col justify-center p-10">
+    <div className="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
+      <Nav />
+      <Hero />
     </div>
+  </div>
+
   );
 }
 
